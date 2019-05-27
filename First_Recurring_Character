@@ -1,0 +1,26 @@
+Description
+
+Write a program that outputs the first recurring character in a string.
+Formal Inputs & Outputs
+Input Description
+
+A string of alphabetical characters. Example:
+
+ABCDEBC
+
+Output description
+
+The first recurring character from the input. From the above example:
+
+B
+
+Solution:
+
+def first_recurring(word):
+    for c in word:
+        if(word.count(c)>1):
+           print(c)
+           break
+           
+x=input("Enter a Word:")
+print(first_recurring(x))
